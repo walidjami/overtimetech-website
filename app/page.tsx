@@ -32,7 +32,7 @@ export default function OverTimeTech() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-900 via-black to-gray-900 text-white p-6">
+    <main className="min-h-screen bg-gradient-to-br from-cyan-50 via-white to-blue-100 text-gray-800 p-6">
       <header className="text-center mb-16">
         <motion.h1 
           className="text-6xl font-extrabold text-cyan-400 drop-shadow-lg mb-4"
@@ -43,7 +43,7 @@ export default function OverTimeTech() {
           OverTime Tech
         </motion.h1>
         <motion.p 
-          className="text-2xl text-gray-300"
+          className="text-2xl text-gray-600"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -102,7 +102,7 @@ export default function OverTimeTech() {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl font-extrabold text-cyan-400 mb-4">Let’s Work Together</h2>
-        <p className="text-lg text-gray-300 mb-6">
+        <p className="text-lg text-gray-600 mb-6">
           Reach out and let’s build something extraordinary. OverTime Tech has your back 24/7.
         </p>
         <Button onClick={handleContactClick} className="text-lg px-6 py-2 rounded-2xl shadow-md bg-cyan-600 hover:bg-cyan-500">
