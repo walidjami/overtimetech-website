@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const IndexSectionCustomComponents4: React.FC = () => {
   return (
@@ -16,30 +17,42 @@ const IndexSectionCustomComponents4: React.FC = () => {
             </p>
           </div>
           <div className="flex space-x-6 mb-6 md:mb-0">
-            <a
+            <Link
               className="text-neutral-400 hover:text-white transition-colors duration-200"
-              href="#"
+              href="/#our-tech-services"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("our-tech-services")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-neutral-400 hover:text-white transition-colors duration-200"
-              href="#"
+              href="/about"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-neutral-400 hover:text-white transition-colors duration-200"
-              href="#"
+              href="/#ready-to-get-started"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("ready-to-get-started")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Contact
-            </a>
-            <a
+            </Link>
+            <Link
               className="text-neutral-400 hover:text-white transition-colors duration-200"
-              href="#"
+              href="/privacy"
             >
               Privacy
-            </a>
+            </Link>
           </div>
         </div>
         <div className="border-t border-neutral-800 pt-6 mt-6 text-center">

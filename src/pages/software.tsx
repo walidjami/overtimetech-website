@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
 const SoftwarePage: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     // Load custom component scripts after React components are mounted
     const script1 = document.createElement("script");
@@ -33,7 +35,10 @@ const SoftwarePage: React.FC = () => {
               />
             </Link>
             <div className="lg:hidden">
-              <button className="block hover:text-white text-neutral-300 focus:outline-none transition-colors duration-200">
+              <button 
+                onClick={() => setIsMenuOpen(!isMenuOpen)} 
+                className="block hover:text-white text-neutral-300 focus:outline-none transition-colors duration-200"
+              >
                 <svg
                   className="h-6 w-6"
                   fill="currentColor"
@@ -238,6 +243,92 @@ const SoftwarePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Mobile Menu */}
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50`}>
+        <div className="fixed inset-0 bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 opacity-75 filter blur-3xl" />
+        <nav className="relative flex flex-col py-6 px-6 w-full h-full bg-neutral-900 border-r border-neutral-800 overflow-y-auto">
+          <div className="flex items-center mb-12">
+            <Link href="/" className="mr-auto" onClick={() => setIsMenuOpen(false)}>
+              <img
+                src="https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png"
+                alt="OverTime Tech"
+                className="h-8"
+              />
+            </Link>
+            <button onClick={() => setIsMenuOpen(false)}>
+              <svg
+                className="h-6 w-6 cursor-pointer hover:text-white text-neutral-400 transition-colors duration-200"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li className="mb-1">
+                <Link
+                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
+                  href="/repairs"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Repairs
+                </Link>
+              </li>
+              <li className="mb-1">
+                <Link
+                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
+                  href="/custom-builds"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Custom Builds
+                </Link>
+              </li>
+              <li className="mb-1">
+                <Link
+                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-white transition-all duration-200"
+                  href="/software"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Software
+                </Link>
+              </li>
+              <li className="mb-1">
+                <Link
+                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
+                  href="/websites"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Websites
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="mt-auto">
+            <div className="pt-6">
+              <Link
+                className="block px-6 py-3 text-sm text-center font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-lg transition-all duration-200"
+                href="/#ready-to-get-started"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Get Quote
+                </Link>
+            </div>
+            <p className="mt-6 mb-4 text-sm text-center text-neutral-500">
+              <span>© 2025 OverTime Tech. All rights reserved.</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+
       <footer className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 border-t border-neutral-800 py-12">
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -260,19 +351,19 @@ const SoftwarePage: React.FC = () => {
               </Link>
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
-                href="#"
+                href="/about"
               >
                 About
               </Link>
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
-                href="#"
+                href="/#ready-to-get-started"
               >
                 Contact
               </Link>
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
-                href="#"
+                href="/privacy"
               >
                 Privacy
               </Link>

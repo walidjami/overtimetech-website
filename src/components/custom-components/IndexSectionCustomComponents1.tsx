@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const IndexSectionCustomComponents1: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <section className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950">
       <div className="container px-4 mx-auto">
@@ -14,7 +16,10 @@ const IndexSectionCustomComponents1: React.FC = () => {
             />
           </Link>
           <div className="lg:hidden">
-            <button className="block hover:text-white text-neutral-300 focus:outline-none transition-colors duration-200">
+            <button 
+              onClick={() => setIsMenuOpen(!isMenuOpen)} 
+              className="block hover:text-white text-neutral-300 focus:outline-none transition-colors duration-200"
+            >
               <svg
                 className="h-6 w-6"
                 fill="currentColor"
@@ -60,7 +65,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
               </Link>
             </li>
           </ul>
-          <a
+          <Link
             className="hidden lg:block px-4 py-2 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg"
             href="#ready-to-get-started"
             onClick={(e) => {
@@ -71,7 +76,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
             }}
           >
             Get Quote
-          </a>
+          </Link>
         </nav>
         <div className="flex flex-wrap items-center -mx-4 mt-8 lg:mt-12 pb-20">
           <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
@@ -89,7 +94,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
               technology solutions with professional expertise and dedication.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
+              <Link
                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg group"
                 href="#ready-to-get-started"
                 onClick={(e) => {
@@ -113,8 +118,8 @@ const IndexSectionCustomComponents1: React.FC = () => {
                     d="M9 5l7 7-7 7"
                   />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white hover:text-white border border-neutral-700 hover:border-white hover:border-opacity-50 rounded-full transition-all duration-200"
                 href="#our-tech-services"
                 onClick={(e) => {
@@ -125,7 +130,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 }}
               >
                 View Services
-              </a>
+              </Link>
             </div>
             <div className="flex items-center space-x-6 mt-12">
               <div className="text-sm text-neutral-400">
@@ -177,7 +182,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50`}>
         <div className="fixed inset-0 bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 opacity-75 filter blur-3xl" />
         <nav className="relative flex flex-col py-6 px-6 w-full h-full bg-neutral-900 border-r border-neutral-800 overflow-y-auto">
           <div className="flex items-center mb-12">
@@ -188,7 +193,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 className="h-8"
               />
             </Link>
-            <button>
+            <button onClick={() => setIsMenuOpen(false)}>
               <svg
                 className="h-6 w-6 cursor-pointer hover:text-white text-neutral-400 transition-colors duration-200"
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,6 +216,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 <Link
                   className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
                   href="/repairs"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Repairs
                 </Link>
@@ -219,6 +225,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 <Link
                   className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
                   href="/custom-builds"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Custom Builds
                 </Link>
@@ -227,6 +234,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 <Link
                   className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
                   href="/software"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Software
                 </Link>
@@ -235,6 +243,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 <Link
                   className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
                   href="/websites"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Websites
                 </Link>
@@ -243,18 +252,19 @@ const IndexSectionCustomComponents1: React.FC = () => {
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-              <a
+              <Link
                 className="block px-6 py-3 text-sm text-center font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-lg transition-all duration-200"
-                href="#ready-to-get-started"
+                href="/#ready-to-get-started"
                 onClick={(e) => {
                   e.preventDefault();
+                  setIsMenuOpen(false);
                   document
                     .getElementById("ready-to-get-started")
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 Get Quote
-              </a>
+              </Link>
             </div>
             <p className="mt-6 mb-4 text-sm text-center text-neutral-500">
               <span>© 2025 OverTime Tech. All rights reserved.</span>

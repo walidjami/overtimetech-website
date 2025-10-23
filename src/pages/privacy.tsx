@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-const RepairsPage: React.FC = () => {
+const PrivacyPage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const RepairsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Computer Repairs — OverTime-Tech</title>
+        <title>Privacy Policy — OverTime-Tech</title>
         <link
           rel="icon"
           type="image/png"
@@ -53,7 +53,7 @@ const RepairsPage: React.FC = () => {
             <ul className="hidden lg:flex ml-auto mr-8 items-center w-auto space-x-8">
               <li>
                 <Link
-                  className="text-sm hover:text-white font-medium text-white transition-colors duration-200"
+                  className="text-sm hover:text-white font-medium text-neutral-300 transition-colors duration-200"
                   href="/repairs"
                 >
                   Repairs
@@ -98,139 +98,202 @@ const RepairsPage: React.FC = () => {
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-6">
                 <svg
                   className="w-8 h-8 text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                 </svg>
               </div>
               <h1 className="text-5xl leading-tight font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 font-heading mb-6">
-                Computer Repairs
+                Privacy Policy
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Professional diagnostic and repair services for desktops, laptops, and mobile devices with quick turnaround times.
+                Your privacy is important to us. This policy explains how we collect, use, and protect your information.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6">
-                  What We Repair
+            <div className="prose prose-invert max-w-none">
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  Information We Collect
                 </h2>
-                <ul className="space-y-4 text-neutral-300">
+                <p className="text-neutral-300 mb-4">
+                  We collect information you provide directly to us, such as when you:
+                </p>
+                <ul className="text-neutral-300 space-y-2 mb-6">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Desktop computers and workstations
+                    Fill out our contact form or request a quote
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Laptops and notebooks
+                    Communicate with us via email or phone
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Tablets and mobile devices
+                    Use our services or request technical support
+                  </li>
+                </ul>
+                <p className="text-neutral-300">
+                  This information may include your name, email address, phone number, 
+                  project details, and any other information you choose to provide.
+                </p>
+              </div>
+
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  How We Use Your Information
+                </h2>
+                <p className="text-neutral-300 mb-4">
+                  We use the information we collect to:
+                </p>
+                <ul className="text-neutral-300 space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Provide, maintain, and improve our services
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Gaming consoles and peripherals
+                    Respond to your inquiries and provide customer support
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Printers and networking equipment
+                    Send you technical information, updates, and marketing communications
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Process transactions and send related information
                   </li>
                 </ul>
               </div>
-              <div>
-                <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6">
-                  Our Process
+
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  Information Sharing
                 </h2>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">1</div>
-                    <div>
-                      <h3 className="text-lg font-medium text-white mb-2">Diagnosis</h3>
-                      <p className="text-neutral-300">We thoroughly diagnose the issue using professional tools and techniques.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">2</div>
-                    <div>
-                      <h3 className="text-lg font-medium text-white mb-2">Quote</h3>
-                      <p className="text-neutral-300">We provide a detailed quote with no hidden fees before starting work.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">3</div>
-                    <div>
-                      <h3 className="text-lg font-medium text-white mb-2">Repair</h3>
-                      <p className="text-neutral-300">Our certified technicians perform the repair with quality parts and tools.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">4</div>
-                    <div>
-                      <h3 className="text-lg font-medium text-white mb-2">Testing</h3>
-                      <p className="text-neutral-300">We thoroughly test your device to ensure everything works perfectly.</p>
-                    </div>
-                  </div>
+                <p className="text-neutral-300 mb-4">
+                  We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:
+                </p>
+                <ul className="text-neutral-300 space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    With your explicit consent
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    To comply with legal obligations
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    To protect our rights and prevent fraud
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  Data Security
+                </h2>
+                <p className="text-neutral-300 mb-4">
+                  We implement appropriate security measures to protect your personal information against unauthorized access, 
+                  alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic 
+                  storage is 100% secure, and we cannot guarantee absolute security.
+                </p>
+              </div>
+
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  Your Rights
+                </h2>
+                <p className="text-neutral-300 mb-4">
+                  You have the right to:
+                </p>
+                <ul className="text-neutral-300 space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Access and update your personal information
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Request deletion of your personal information
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Opt out of marketing communications
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Withdraw consent at any time
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  Contact Us
+                </h2>
+                <p className="text-neutral-300 mb-4">
+                  If you have any questions about this Privacy Policy or our data practices, please contact us:
+                </p>
+                <div className="text-neutral-300 space-y-2">
+                  <p>Email: info@overtimetech.com</p>
+                  <p>Phone: (662) 622-1505</p>
+                  <p>Address: 123 Tech Street, Digital City, DC 12345</p>
                 </div>
+              </div>
+
+              <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8">
+                <h2 className="text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-4">
+                  Changes to This Policy
+                </h2>
+                <p className="text-neutral-300">
+                  We may update this Privacy Policy from time to time. We will notify you of any changes by posting 
+                  the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review 
+                  this Privacy Policy periodically for any changes.
+                </p>
+                <p className="text-neutral-400 text-sm mt-4">
+                  Last Updated: January 2025
+                </p>
               </div>
             </div>
 
-            <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-16">
-              <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6 text-center">
-                Common Repair Services
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Hardware Issues</h3>
-                  <p className="text-neutral-300">Screen replacements, keyboard repairs, battery issues, and component upgrades.</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.666.804 4.332A1 1 0 0113 21H7a1 1 0 01-.707-1.707L7.1 16H5a2 2 0 01-2-2V5zm5.5 5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Software Problems</h3>
-                  <p className="text-neutral-300">Virus removal, OS installation, driver updates, and performance optimization.</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Data Recovery</h3>
-                  <p className="text-neutral-300">Recover lost files, photos, and documents from damaged or corrupted drives.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
+            <div className="text-center mt-12">
               <Link
                 className="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg"
-                href="/#ready-to-get-started"
+                href="/"
               >
-                Get Your Repair Quote
+                Back to Home
               </Link>
             </div>
           </div>
@@ -270,7 +333,7 @@ const RepairsPage: React.FC = () => {
             <ul>
               <li className="mb-1">
                 <Link
-                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-white transition-all duration-200"
+                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
                   href="/repairs"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -308,7 +371,7 @@ const RepairsPage: React.FC = () => {
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-                <Link
+              <Link
                 className="block px-6 py-3 text-sm text-center font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-lg transition-all duration-200"
                 href="/#ready-to-get-started"
                 onClick={() => setIsMenuOpen(false)}
@@ -340,6 +403,12 @@ const RepairsPage: React.FC = () => {
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
                 href="/#our-tech-services"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("our-tech-services")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Services
               </Link>
@@ -352,6 +421,12 @@ const RepairsPage: React.FC = () => {
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
                 href="/#ready-to-get-started"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("ready-to-get-started")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Contact
               </Link>
@@ -375,4 +450,4 @@ const RepairsPage: React.FC = () => {
   );
 };
 
-export default RepairsPage;
+export default PrivacyPage;
