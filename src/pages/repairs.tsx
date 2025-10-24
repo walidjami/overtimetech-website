@@ -16,7 +16,7 @@ const RepairsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Computer Repairs — OverTime-Tech</title>
+        <title>Repairs — OverTime-Tech</title>
         <link
           rel="icon"
           type="image/png"
