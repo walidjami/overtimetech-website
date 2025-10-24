@@ -311,7 +311,13 @@ const RepairsPage: React.FC = () => {
                 <Link
                 className="block px-6 py-3 text-sm text-center font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-lg transition-all duration-200"
                 href="/#ready-to-get-started"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMenuOpen(false);
+                  document
+                    .getElementById("ready-to-get-started")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Get Quote
               </Link>

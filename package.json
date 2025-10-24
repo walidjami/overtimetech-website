@@ -5,6 +5,9 @@
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build",
+        "export": "next export",
+        "predeploy": "npm run build && npm run export",
+        "deploy": "gh-pages -d out",
         "start": "next start",
         "lint": "next lint",
         "type-check": "tsc --noEmit"
@@ -22,6 +25,7 @@
         "autoprefixer": "^10.4.21",
         "eslint": "^9.32.0",
         "eslint-config-next": "15.4.4",
+        "gh-pages": "^6.3.0",
         "postcss": "^8.5.6",
         "tailwindcss": "^3.0.7",
         "typescript": "^5.8.3"

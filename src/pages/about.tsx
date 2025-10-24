@@ -370,19 +370,13 @@ const AboutPage: React.FC = () => {
               </Link>
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
-                href="#ready-to-get-started"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("ready-to-get-started")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
+                href="/#ready-to-get-started"
               >
                 Contact
               </Link>
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
-                href="#"
+                href="/privacy"
               >
                 Privacy
               </Link>

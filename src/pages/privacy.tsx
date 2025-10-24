@@ -403,12 +403,7 @@ const PrivacyPage: React.FC = () => {
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
                 href="/#our-tech-services"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("our-tech-services")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
@@ -421,12 +416,6 @@ const PrivacyPage: React.FC = () => {
               <Link
                 className="text-neutral-400 hover:text-white transition-colors duration-200"
                 href="/#ready-to-get-started"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("ready-to-get-started")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
               >
                 Contact
               </Link>

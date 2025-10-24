@@ -25,6 +25,13 @@ const nextConfig = {
     return config
   },
   */
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '',
+  assetPrefix: '',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
