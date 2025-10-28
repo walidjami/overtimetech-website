@@ -87,7 +87,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
                 <input
                   className="w-full py-3 px-4 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 focus:border-white focus:border-neutral-400 text-white placeholder-neutral-400 rounded-lg transition duration-200 focus:outline-none"
                   type="text"
-                  name="first-name"
+                  name="first_name"
                   value={formData.first_name}
                   onChange={handleChange}
                   required
@@ -104,7 +104,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
                 <input
                   className="w-full py-3 px-4 bg-neutral-800 border border-neutral-700 hover:border-neutral-600 focus:border-white focus:border-neutral-400 text-white placeholder-neutral-400 rounded-lg transition duration-200 focus:outline-none"
                   type="text"
-                  name="last-name"
+                  name="last_name"
                   value={formData.last_name}
                   onChange={handleChange}
                   required
