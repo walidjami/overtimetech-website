@@ -199,9 +199,13 @@ const IndexSectionCustomComponents3: React.FC = () => {
                 className="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg"
                 type="submit"
               >
-                {status === "loading" ? "Submitting..." : "Get Your Quote"}
-                {status === "success" ? "Thank you! We’ll reach out soon." : ""}
-                {status === "error" ? "An error occurred. Please try again." : ""}
+                {status === "loading"
+                  ? "Submitting..."
+                  : status === "success"
+                  ? "Thank you! We'll reach out soon."
+                  : status === "error"
+                  ? "An error occurred. Please try again."
+                  : "Get Your Quote"}
               </button>
             </div>
           </form>
