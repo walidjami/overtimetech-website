@@ -28,7 +28,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
           phone: formData.phone,
           email: formData.email,
           service: formData.service,
-          details: formData.details,
+          details: formData.details
         }),
       });
       const data = await res.json();
