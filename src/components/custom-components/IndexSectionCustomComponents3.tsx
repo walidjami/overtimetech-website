@@ -31,26 +31,63 @@ const IndexSectionCustomComponents3: React.FC = () => {
           details: formData.details
         }),
       });
-      const data = await res.json();
-      if (res.ok) {
-        setStatus("success");
-        setMessage("Thank you! We’ll reach out soon.");
-        setFormData({
-          first_name: '',
-          last_name: '',
-          phone: '',
-          email: '',
-          service: 'Computer Repair',
-          details: '',
-        });
-      } else {
-        setStatus("error");
-        setMessage(`Error: ${data.message}`);
+
+          // Check if response is OK before parsing JSON
+    if (!res.ok) {
+      // Try to get error message from response
+      let errorMessage = `HTTP Error: ${res.status}`;
+      try {
+        const errorData = await res.json();
+        errorMessage = errorData.message || errorMessage;
+      } catch {
+        // If response isn't JSON, get text instead
+        const errorText = await res.text();
+        errorMessage = errorText || errorMessage;
       }
+      throw new Error(errorMessage);
+    }
+
+      const data = await res.json();
+      setStatus("success");
+      setMessage("Thank you! We'll reach out soon.");
+      setFormData({
+        first_name: '',
+        last_name: '',
+        phone: '',
+        email: '',
+        service: 'Computer Repair',
+        details: '',
+      });
+      // if (res.ok) {
+      //   setStatus("success");
+      //   setMessage("Thank you! We’ll reach out soon.");
+      //   setFormData({
+      //     first_name: '',
+      //     last_name: '',
+      //     phone: '',
+      //     email: '',
+      //     service: 'Computer Repair',
+      //     details: '',
+      //   });
+      // } else {
+      //   setStatus("error");
+      //   setMessage(`Error: ${data.message}`);
+      // }
     } catch (error) {
-      console.error(error);
+      console.error('Submission error:', error);
       setStatus("error");
-      setMessage("An error occurred. Please try again.");
+      setMessage("1 An error occurred. Please try again.");
+
+      // More specific error messages
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        setMessage("Network error: Unable to reach server. Please check your connection.");
+      } else if (error instanceof SyntaxError) {
+        setMessage("Server response error. Please try again.");
+      } else if (error instanceof Error) {
+        setMessage(`Error: ${error.message}`);
+      } else {
+        setMessage("An unexpected error occurred. Please try again.");
+      }
     }
     finally {
       setTimeout(() => {
