@@ -11,8 +11,19 @@ const IndexSectionCustomComponents3: React.FC = () => {
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const formatPhoneNumber = (value: string) => {
+    const digits = value.replace(/\D/g, '').slice(0, 10);
+    if (digits.length < 4) return digits;
+    if (digits.length < 7) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    if (name === 'phone') {
+      setFormData({ ...formData, phone: formatPhoneNumber(value) });
+      return;
+    }
+    setFormData({ ...formData, [name]: value });
   };
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -47,7 +58,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
       throw new Error(errorMessage);
     }
 
-      const data = await res.json();
+      await res.json();
       setStatus("success");
       setMessage("Thank you! We'll reach out soon.");
       setFormData({
@@ -58,35 +69,14 @@ const IndexSectionCustomComponents3: React.FC = () => {
         service: 'Computer Repair',
         details: '',
       });
-      // if (res.ok) {
-      //   setStatus("success");
-      //   setMessage("Thank you! We’ll reach out soon.");
-      //   setFormData({
-      //     first_name: '',
-      //     last_name: '',
-      //     phone: '',
-      //     email: '',
-      //     service: 'Computer Repair',
-      //     details: '',
-      //   });
-      // } else {
-      //   setStatus("error");
-      //   setMessage(`Error: ${data.message}`);
-      // }
     } catch (error) {
       console.error('Submission error:', error);
       setStatus("error");
-      setMessage("1 An error occurred. Please try again.");
 
-      // More specific error messages
       if (error instanceof TypeError && error.message.includes('fetch')) {
         setMessage("Network error: Unable to reach server. Please check your connection.");
-      } else if (error instanceof SyntaxError) {
-        setMessage("Server response error. Please try again.");
-      } else if (error instanceof Error) {
-        setMessage(`Error: ${error.message}`);
       } else {
-        setMessage("An unexpected error occurred. Please try again.");
+        setMessage("An error occurred. Please try again.");
       }
     }
     finally {
@@ -163,6 +153,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
                 placeholder="(123) 456-7890"
                 value={formData.phone}
                 onChange={handleChange}
+                maxLength={14}
                 required
               />
             </div>
@@ -233,17 +224,21 @@ const IndexSectionCustomComponents3: React.FC = () => {
             </div>
             <div className="text-center">
               <button
-                className="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg"
+                className="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
                 type="submit"
+                disabled={status === "loading"}
               >
-                {status === "loading"
-                  ? "Submitting..."
-                  : status === "success"
-                  ? "Thank you! We'll reach out soon."
-                  : status === "error"
-                  ? "An error occurred. Please try again."
-                  : "Get Your Quote"}
+                {status === "loading" ? "Submitting..." : "Get Your Quote"}
               </button>
+              {message && (
+                <p
+                  className={`mt-4 text-sm ${
+                    status === "success" ? "text-green-400" : "text-red-400"
+                  }`}
+                >
+                  {message}
+                </p>
+              )}
             </div>
           </form>
         </div>
