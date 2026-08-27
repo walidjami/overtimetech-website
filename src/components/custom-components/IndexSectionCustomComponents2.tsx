@@ -13,7 +13,7 @@ const IndexSectionCustomComponents2: React.FC = () => {
           </h2>
           <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
             From repairs to custom solutions, we deliver comprehensive
-            technology services that gets your tech back up and running
+            technology services that gets your tech back up & running
             and keeps it running smoothly
           </p>
         </div>
@@ -81,7 +81,7 @@ const IndexSectionCustomComponents2: React.FC = () => {
             </h3>
             <p className="text-neutral-300 mb-4">
               Custom software solutions and applications designed to streamline
-              your business processes and boost productivity.
+              your business processes and boost productivity
             </p>
             <Link
               className="inline-flex items-center text-lg font-semibold text-white hover:text-white border-b border-white border-opacity-20 hover:border-opacity-50 transition-all duration-200"
@@ -105,7 +105,7 @@ const IndexSectionCustomComponents2: React.FC = () => {
             </h3>
             <p className="text-neutral-300 mb-4">
               Professional web design and development services that help
-              establish your digital presence and grow your business.
+              establish your digital presence and grow your business
             </p>
             <Link
               className="inline-flex items-center text-lg font-semibold text-white hover:text-white border-b border-white border-opacity-20 hover:border-opacity-50 transition-all duration-200"

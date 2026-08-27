@@ -337,7 +337,6 @@ const AboutPage: React.FC = () => {
             </div>
             <p className="mt-6 mb-4 text-sm text-center text-neutral-500">
               <span>© 2025 OverTime Tech. All rights reserved.</span>
-              <span>You bring the tech, we bring the OverTime</span>
             </p>
           </div>
         </nav>
@@ -353,7 +352,7 @@ const AboutPage: React.FC = () => {
                 className="h-8 mb-2"
               />
               <p className="text-neutral-400 text-sm">
-                Complete technology solutions for your business
+                Complete Tech Solutions
               </p>
             </div>
             <div className="flex space-x-6 mb-6 md:mb-0">
@@ -385,8 +384,8 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
             <p className="text-neutral-500 text-sm">
-              © 2025 OverTime Tech. All rights reserved. You bring the tech, we
-              bring the OverTime.
+              © 2025 OverTime Tech. All rights reserved.<br />
+              You bring the tech, we bring the OverTime
             </p>
           </div>
         </div>

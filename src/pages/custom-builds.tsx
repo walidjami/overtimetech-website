@@ -125,7 +125,7 @@ const CustomBuildsPage: React.FC = () => {
                     <h3 className="text-xl font-medium text-white mb-3">Gaming PCs</h3>
                     <p className="text-neutral-300 mb-4">High-performance systems optimized for gaming with the latest graphics cards and processors</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
-                      <li>• RTX 5000 series graphics cards</li>
+                      <li>• NVIDIA & AMD graphics cards</li>
                       <li>• High-refresh rate monitors</li>
                       <li>• RGB lighting and custom cooling</li>
                     </ul>
@@ -330,7 +330,7 @@ const CustomBuildsPage: React.FC = () => {
                 className="h-8 mb-2"
               />
               <p className="text-neutral-400 text-sm">
-                Complete technology solutions for your business
+                Complete Tech Solutions
               </p>
             </div>
             <div className="flex space-x-6 mb-6 md:mb-0">

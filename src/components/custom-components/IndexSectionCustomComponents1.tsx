@@ -89,9 +89,9 @@ const IndexSectionCustomComponents1: React.FC = () => {
               You bring the tech, we bring the OverTime
             </h1>
             <p className="max-w-xl mb-10 text-lg leading-relaxed text-neutral-300">
-              From computer repairs and custom builds to software development
-              and website creation - OverTime Tech delivers comprehensive
-              technology solutions with professional expertise and dedication.
+              From computer repairs & custom builds to software development
+              & website creation - OverTime Tech delivers comprehensive
+              technology solutions with professional expertise and dedication
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -268,6 +268,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
             </div>
             <p className="mt-6 mb-4 text-sm text-center text-neutral-500">
               <span>© 2025 OverTime Tech. All rights reserved.</span>
+              <br />
               <span>You bring the tech, we bring the OverTime</span>
             </p>
           </div>

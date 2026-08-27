@@ -13,7 +13,7 @@ const IndexSectionCustomComponents4: React.FC = () => {
               className="h-8 mb-2"
             />
             <p className="text-neutral-400 text-sm">
-              Complete technology solutions for you or your business
+              Complete Tech Solutions
             </p>
           </div>
           <div className="flex space-x-6 mb-6 md:mb-0">

@@ -111,7 +111,7 @@ const PrivacyPage: React.FC = () => {
                 Privacy Policy
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Your privacy is important to us. This policy explains how we collect, use, and protect your information.
+                Your privacy is important to us. This policy explains how we collect, use, and protect your information
               </p>
             </div>
 
@@ -145,7 +145,7 @@ const PrivacyPage: React.FC = () => {
                 </ul>
                 <p className="text-neutral-300">
                   This information may include your name, email address, phone number, 
-                  project details, and any other information you choose to provide.
+                  project details, and any other information you choose to provide
                 </p>
               </div>
 
@@ -220,7 +220,7 @@ const PrivacyPage: React.FC = () => {
                 <p className="text-neutral-300 mb-4">
                   We implement appropriate security measures to protect your personal information against unauthorized access, 
                   alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic 
-                  storage is 100% secure, and we cannot guarantee absolute security.
+                  storage is 100% secure, and we cannot guarantee absolute security
                 </p>
               </div>
 
@@ -279,7 +279,7 @@ const PrivacyPage: React.FC = () => {
                 <p className="text-neutral-300">
                   We may update this Privacy Policy from time to time. We will notify you of any changes by posting 
                   the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review 
-                  this Privacy Policy periodically for any changes.
+                  this Privacy Policy periodically for any changes
                 </p>
                 <p className="text-neutral-400 text-sm mt-4">
                   Last Updated: August 2026
@@ -395,7 +395,7 @@ const PrivacyPage: React.FC = () => {
                 className="h-8 mb-2"
               />
               <p className="text-neutral-400 text-sm">
-                Complete technology solutions for your business
+                Complete Tech Solutions
               </p>
             </div>
             <div className="flex space-x-6 mb-6 md:mb-0">
@@ -429,7 +429,7 @@ const PrivacyPage: React.FC = () => {
           <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
             <p className="text-neutral-500 text-sm">
               © 2025 OverTime Tech. All rights reserved.<br />
-              You bring the tech, we bring the OverTime.
+              You bring the tech, we bring the OverTime
             </p>
           </div>
         </div>
