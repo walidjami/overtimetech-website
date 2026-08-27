@@ -268,6 +268,7 @@ const IndexSectionCustomComponents1: React.FC = () => {
             </div>
             <p className="mt-6 mb-4 text-sm text-center text-neutral-500">
               <span>© 2025 OverTime Tech. All rights reserved.</span>
+              <span>You bring the tech, we bring the OverTime</span>
             </p>
           </div>
         </nav>

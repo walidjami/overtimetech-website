@@ -111,7 +111,7 @@ const SoftwarePage: React.FC = () => {
                 Software Development
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Custom software solutions and applications designed to streamline your business processes and boost productivity.
+                Custom software solutions and applications designed to streamline your business processes and boost productivity
               </p>
             </div>
 
@@ -123,7 +123,7 @@ const SoftwarePage: React.FC = () => {
                 <div className="space-y-6">
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Web Applications</h3>
-                    <p className="text-neutral-300 mb-4">Custom web applications built with modern frameworks and technologies.</p>
+                    <p className="text-neutral-300 mb-4">Custom web applications built with modern frameworks and technologies</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• React, Vue.js, Angular</li>
                       <li>• Node.js, Python, PHP</li>
@@ -132,7 +132,7 @@ const SoftwarePage: React.FC = () => {
                   </div>
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Mobile Apps</h3>
-                    <p className="text-neutral-300 mb-4">Native and cross-platform mobile applications for iOS and Android.</p>
+                    <p className="text-neutral-300 mb-4">Native and cross-platform mobile applications for iOS and Android</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• React Native, Flutter</li>
                       <li>• Native iOS/Android</li>
@@ -141,7 +141,7 @@ const SoftwarePage: React.FC = () => {
                   </div>
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Desktop Software</h3>
-                    <p className="text-neutral-300 mb-4">Custom desktop applications for Windows, macOS, and Linux.</p>
+                    <p className="text-neutral-300 mb-4">Custom desktop applications for Windows, macOS, and Linux</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• Electron, .NET, Java</li>
                       <li>• Cross-platform compatibility</li>
@@ -159,28 +159,28 @@ const SoftwarePage: React.FC = () => {
                     <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">1</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Requirements Analysis</h3>
-                      <p className="text-neutral-300">We analyze your business needs and create detailed specifications for your software solution.</p>
+                      <p className="text-neutral-300">We analyze your business needs and create detailed specifications for your software solution</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">2</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Design & Planning</h3>
-                      <p className="text-neutral-300">We create wireframes, user flows, and technical architecture for your application.</p>
+                      <p className="text-neutral-300">We create wireframes, user flows, and technical architecture for your application</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">3</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Development</h3>
-                      <p className="text-neutral-300">Our experienced developers build your software using agile methodologies and best practices.</p>
+                      <p className="text-neutral-300">Our experienced developers build your software using agile methodologies and best practices</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">4</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Testing & Deployment</h3>
-                      <p className="text-neutral-300">We thoroughly test your software and deploy it with ongoing support and maintenance.</p>
+                      <p className="text-neutral-300">We thoroughly test your software and deploy it with ongoing support and maintenance</p>
                     </div>
                   </div>
                 </div>
@@ -371,8 +371,8 @@ const SoftwarePage: React.FC = () => {
           </div>
           <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
             <p className="text-neutral-500 text-sm">
-              © 2025 OverTime Tech. All rights reserved. You bring the tech, we
-              bring the OverTime.
+              © 2025 OverTime Tech. All rights reserved.<br />
+              You bring the tech, we bring the OverTime
             </p>
           </div>
         </div>

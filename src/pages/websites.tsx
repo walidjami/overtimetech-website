@@ -111,7 +111,7 @@ const WebsitesPage: React.FC = () => {
                 Website Creation
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Professional web design and development services that help establish your digital presence and grow your business.
+                Professional web design and development services that help establish your digital presence and grow your business
               </p>
             </div>
 
@@ -123,7 +123,7 @@ const WebsitesPage: React.FC = () => {
                 <div className="space-y-6">
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Business Websites</h3>
-                    <p className="text-neutral-300 mb-4">Professional websites that showcase your business and attract customers.</p>
+                    <p className="text-neutral-300 mb-4">Professional websites that showcase your business and attract customers</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• Responsive design</li>
                       <li>• SEO optimization</li>
@@ -132,7 +132,7 @@ const WebsitesPage: React.FC = () => {
                   </div>
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">E-commerce Sites</h3>
-                    <p className="text-neutral-300 mb-4">Online stores with shopping carts, payment processing, and inventory management.</p>
+                    <p className="text-neutral-300 mb-4">Online stores with shopping carts, payment processing, and inventory management</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• Product catalogs</li>
                       <li>• Payment integration</li>
@@ -141,7 +141,7 @@ const WebsitesPage: React.FC = () => {
                   </div>
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Web Applications</h3>
-                    <p className="text-neutral-300 mb-4">Interactive web applications with user accounts and dynamic functionality.</p>
+                    <p className="text-neutral-300 mb-4">Interactive web applications with user accounts and dynamic functionality</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• User authentication</li>
                       <li>• Database integration</li>
@@ -159,28 +159,28 @@ const WebsitesPage: React.FC = () => {
                     <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">1</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Discovery & Planning</h3>
-                      <p className="text-neutral-300">We understand your business goals and create a comprehensive website strategy.</p>
+                      <p className="text-neutral-300">We understand your business goals and create a comprehensive website strategy</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">2</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Design & Wireframing</h3>
-                      <p className="text-neutral-300">We create mockups and wireframes to visualize your website before development.</p>
+                      <p className="text-neutral-300">We create mockups and wireframes to visualize your website before development</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">3</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Development</h3>
-                      <p className="text-neutral-300">Our developers build your website using modern technologies and best practices.</p>
+                      <p className="text-neutral-300">Our developers build your website using modern technologies and best practices</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">4</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Launch & Support</h3>
-                      <p className="text-neutral-300">We deploy your website and provide ongoing maintenance and support.</p>
+                      <p className="text-neutral-300">We deploy your website and provide ongoing maintenance and support</p>
                     </div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ const WebsitesPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Responsive Design</h3>
-                  <p className="text-neutral-300">Your website will look perfect on all devices - desktop, tablet, and mobile.</p>
+                  <p className="text-neutral-300">Your website will look perfect on all devices - desktop, tablet, and mobile</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -208,7 +208,7 @@ const WebsitesPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">SEO Optimization</h3>
-                  <p className="text-neutral-300">Built-in search engine optimization to help your website rank higher in search results.</p>
+                  <p className="text-neutral-300">Built-in search engine optimization to help your website rank higher in search results</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -217,7 +217,7 @@ const WebsitesPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Ongoing Support</h3>
-                  <p className="text-neutral-300">We provide maintenance, updates, and technical support for your website.</p>
+                  <p className="text-neutral-300">We provide maintenance, updates, and technical support for your website</p>
                 </div>
               </div>
             </div>
@@ -362,8 +362,8 @@ const WebsitesPage: React.FC = () => {
           </div>
           <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
             <p className="text-neutral-500 text-sm">
-              © 2025 OverTime Tech. All rights reserved. You bring the tech, we
-              bring the OverTime.
+              © 2025 OverTime Tech. All rights reserved.<br />
+              You bring the tech, we bring the OverTime
             </p>
           </div>
         </div>

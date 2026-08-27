@@ -267,9 +267,8 @@ const PrivacyPage: React.FC = () => {
                   If you have any questions about this Privacy Policy or our data practices, please contact us:
                 </p>
                 <div className="text-neutral-300 space-y-2">
-                  <p>Email: info@overtimetech.com</p>
+                  <p>Email: contact@overtimetech.pro</p>
                   <p>Phone: (662) 622-1505</p>
-                  <p>Address: 123 Tech Street, Digital City, DC 12345</p>
                 </div>
               </div>
 
@@ -283,7 +282,7 @@ const PrivacyPage: React.FC = () => {
                   this Privacy Policy periodically for any changes.
                 </p>
                 <p className="text-neutral-400 text-sm mt-4">
-                  Last Updated: January 2025
+                  Last Updated: August 2026
                 </p>
               </div>
             </div>
@@ -429,8 +428,8 @@ const PrivacyPage: React.FC = () => {
           </div>
           <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
             <p className="text-neutral-500 text-sm">
-              © 2025 OverTime Tech. All rights reserved. You bring the tech, we
-              bring the OverTime.
+              © 2025 OverTime Tech. All rights reserved.<br />
+              You bring the tech, we bring the OverTime.
             </p>
           </div>
         </div>

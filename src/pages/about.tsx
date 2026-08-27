@@ -111,7 +111,7 @@ const AboutPage: React.FC = () => {
                 About OverTime Tech
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Founded by a passionate software engineer with a deep love for technology and problem-solving.
+                Founded by a passionate computer engineer with a deep love for technology and problem-solving
               </p>
             </div>
 
@@ -134,9 +134,9 @@ const AboutPage: React.FC = () => {
                       </div>
                     </div>
                     <p className="text-neutral-300">
-                      Graduated from George Mason University with a Bachelor's degree in Computer Engineering, 
+                      George Mason University Alumnus with a Bachelor's degree in Computer Engineering, 
                       where I developed a strong foundation in both hardware and software systems, 
-                      digital design, and embedded systems programming.
+                      digital design, and embedded systems programming
                     </p>
                   </div>
 
@@ -156,7 +156,7 @@ const AboutPage: React.FC = () => {
                       As a professional software engineer, I've worked on diverse projects ranging from 
                       web applications and mobile apps to embedded systems and automation tools. 
                       My experience spans multiple programming languages and frameworks, always 
-                      focusing on clean, efficient, and maintainable code.
+                      focusing on clean, efficient, and maintainable code
                     </p>
                   </div>
                 </div>
@@ -199,10 +199,10 @@ const AboutPage: React.FC = () => {
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-4">All Things Tech</h3>
                     <p className="text-neutral-300">
-                      Technology is more than just my career—it's my hobby and passion. I stay up-to-date 
+                      Technology is more than just my career—it's my passion. I stay up-to-date 
                       with the latest developments in hardware, software, and emerging technologies. 
                       Whether it's exploring new programming languages, experimenting with IoT devices, 
-                      or building automation systems, I'm always learning and growing.
+                      or building automation systems, I'm always learning and growing
                     </p>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ const AboutPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Technical Expertise</h3>
-                  <p className="text-neutral-300">Combining formal education with hands-on experience to deliver professional solutions.</p>
+                  <p className="text-neutral-300">Combining formal education and professional expertise with hands-on experience to deliver professional solutions</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -230,7 +230,7 @@ const AboutPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Personal Touch</h3>
-                  <p className="text-neutral-300">Every project is approached with genuine care and attention to detail, treating your tech like my own.</p>
+                  <p className="text-neutral-300">Every project is approached with genuine care and attention to detail, treating your tech like my own</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -239,7 +239,7 @@ const AboutPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Continuous Learning</h3>
-                  <p className="text-neutral-300">Always staying current with technology trends to provide the best solutions for your needs.</p>
+                  <p className="text-neutral-300">Always staying current with technology trends to provide the best solutions for your needs</p>
                 </div>
               </div>
             </div>
@@ -337,6 +337,7 @@ const AboutPage: React.FC = () => {
             </div>
             <p className="mt-6 mb-4 text-sm text-center text-neutral-500">
               <span>© 2025 OverTime Tech. All rights reserved.</span>
+              <span>You bring the tech, we bring the OverTime</span>
             </p>
           </div>
         </nav>

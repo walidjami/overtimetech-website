@@ -13,7 +13,8 @@ const IndexSectionCustomComponents2: React.FC = () => {
           </h2>
           <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
             From repairs to custom solutions, we deliver comprehensive
-            technology services that keep your business running smoothly.
+            technology services that gets your tech back up and running
+            and keeps it running smoothly
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -32,7 +33,7 @@ const IndexSectionCustomComponents2: React.FC = () => {
             </h3>
             <p className="text-neutral-300 mb-4">
               Professional diagnostic and repair services for desktops, laptops,
-              and mobile devices with quick turnaround times.
+              and mobile devices with quick turnaround times
             </p>
             <Link
               className="inline-flex items-center text-lg font-semibold text-white hover:text-white border-b border-white border-opacity-20 hover:border-opacity-50 transition-all duration-200"
@@ -56,7 +57,7 @@ const IndexSectionCustomComponents2: React.FC = () => {
             </h3>
             <p className="text-neutral-300 mb-4">
               Tailored computer systems built to your exact specifications for
-              gaming, workstation, or business applications.
+              gaming, workstation, or business applications
             </p>
             <Link
               className="inline-flex items-center text-lg font-semibold text-white hover:text-white border-b border-white border-opacity-20 hover:border-opacity-50 transition-all duration-200"

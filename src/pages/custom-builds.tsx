@@ -111,7 +111,7 @@ const CustomBuildsPage: React.FC = () => {
                 Custom Builds
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Tailored computer systems built to your exact specifications for gaming, workstation, or business applications.
+                Tailored computer systems built to your exact specifications for gaming, workstation, or business applications
               </p>
             </div>
 
@@ -123,16 +123,16 @@ const CustomBuildsPage: React.FC = () => {
                 <div className="space-y-6">
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Gaming PCs</h3>
-                    <p className="text-neutral-300 mb-4">High-performance systems optimized for gaming with the latest graphics cards and processors.</p>
+                    <p className="text-neutral-300 mb-4">High-performance systems optimized for gaming with the latest graphics cards and processors</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
-                      <li>• RTX 40 series graphics cards</li>
+                      <li>• RTX 5000 series graphics cards</li>
                       <li>• High-refresh rate monitors</li>
                       <li>• RGB lighting and custom cooling</li>
                     </ul>
                   </div>
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Workstations</h3>
-                    <p className="text-neutral-300 mb-4">Professional systems for content creation, engineering, and data analysis.</p>
+                    <p className="text-neutral-300 mb-4">Professional systems for content creation, engineering, and data analysis</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• Multi-core processors</li>
                       <li>• Professional graphics cards</li>
@@ -141,7 +141,7 @@ const CustomBuildsPage: React.FC = () => {
                   </div>
                   <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
                     <h3 className="text-xl font-medium text-white mb-3">Business Systems</h3>
-                    <p className="text-neutral-300 mb-4">Reliable and efficient computers for office environments and business operations.</p>
+                    <p className="text-neutral-300 mb-4">Reliable and efficient computers for office environments and business operations</p>
                     <ul className="text-sm text-neutral-400 space-y-1">
                       <li>• Energy-efficient components</li>
                       <li>• Quiet operation</li>
@@ -159,28 +159,28 @@ const CustomBuildsPage: React.FC = () => {
                     <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">1</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Consultation</h3>
-                      <p className="text-neutral-300">We discuss your needs, budget, and performance requirements to create the perfect build.</p>
+                      <p className="text-neutral-300">We discuss your needs, budget, and performance requirements to create the perfect build</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">2</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Component Selection</h3>
-                      <p className="text-neutral-300">We carefully select compatible, high-quality components that meet your specifications.</p>
+                      <p className="text-neutral-300">We carefully select compatible, high-quality components that meet your specifications</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">3</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Assembly</h3>
-                      <p className="text-neutral-300">Our skilled technicians carefully assemble your system with attention to cable management and cooling.</p>
+                      <p className="text-neutral-300">Our skilled technicians carefully assemble your system with attention to cable management and cooling</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm mr-4 flex-shrink-0">4</div>
                     <div>
                       <h3 className="text-lg font-medium text-white mb-2">Testing & Setup</h3>
-                      <p className="text-neutral-300">We thoroughly test all components and install your preferred operating system and software.</p>
+                      <p className="text-neutral-300">We thoroughly test all components and install your preferred operating system and software</p>
                     </div>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ const CustomBuildsPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Quality Guarantee</h3>
-                  <p className="text-neutral-300">All components are tested and come with manufacturer warranties. We stand behind our builds.</p>
+                  <p className="text-neutral-300">All components are tested and come with manufacturer warranties. We stand behind our builds</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -208,7 +208,7 @@ const CustomBuildsPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Custom Configuration</h3>
-                  <p className="text-neutral-300">Every build is tailored to your specific needs, ensuring optimal performance for your use case.</p>
+                  <p className="text-neutral-300">Every build is tailored to your specific needs, ensuring optimal performance for your use case</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -217,7 +217,7 @@ const CustomBuildsPage: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="text-xl font-medium text-white mb-2">Ongoing Support</h3>
-                  <p className="text-neutral-300">We provide setup assistance, maintenance tips, and technical support for your custom build.</p>
+                  <p className="text-neutral-300">We provide setup assistance, maintenance tips, and technical support for your custom build</p>
                 </div>
               </div>
             </div>
@@ -362,8 +362,8 @@ const CustomBuildsPage: React.FC = () => {
           </div>
           <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
             <p className="text-neutral-500 text-sm">
-              © 2025 OverTime Tech. All rights reserved. You bring the tech, we
-              bring the OverTime.
+              © 2025 OverTime Tech. All rights reserved.<br />
+              You bring the tech, we bring the OverTime
             </p>
           </div>
         </div>

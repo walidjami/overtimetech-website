@@ -60,7 +60,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
 
       await res.json();
       setStatus("success");
-      setMessage("Thank you! We'll reach out soon.");
+      setMessage("Thank you! We'll reach out soon");
       setFormData({
         first_name: '',
         last_name: '',
@@ -74,9 +74,9 @@ const IndexSectionCustomComponents3: React.FC = () => {
       setStatus("error");
 
       if (error instanceof TypeError && error.message.includes('fetch')) {
-        setMessage("Network error: Unable to reach server. Please check your connection.");
+        setMessage("Network error: Unable to reach server. Please check your connection");
       } else {
-        setMessage("An error occurred. Please try again.");
+        setMessage("An error occurred. Please try again");
       }
     }
     finally {
@@ -99,7 +99,7 @@ const IndexSectionCustomComponents3: React.FC = () => {
             </h2>
             <p className="text-lg leading-relaxed text-neutral-300">
               Get in touch with us today and discover how our comprehensive tech
-              solutions can transform your business.
+              solutions can get your tech working for you
             </p>
           </div>
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">

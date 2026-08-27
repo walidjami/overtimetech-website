@@ -13,7 +13,7 @@ const IndexSectionCustomComponents4: React.FC = () => {
               className="h-8 mb-2"
             />
             <p className="text-neutral-400 text-sm">
-              Complete technology solutions for your business
+              Complete technology solutions for you or your business
             </p>
           </div>
           <div className="flex space-x-6 mb-6 md:mb-0">
@@ -57,8 +57,8 @@ const IndexSectionCustomComponents4: React.FC = () => {
         </div>
         <div className="border-t border-neutral-800 pt-6 mt-6 text-center">
           <p className="text-neutral-500 text-sm">
-            © 2025 OverTime Tech. All rights reserved. You bring the tech, we
-            bring the OverTime.
+            © 2025 OverTime Tech. All rights reserved.<br />
+            You bring the tech, we bring the OverTime
           </p>
         </div>
       </div>
