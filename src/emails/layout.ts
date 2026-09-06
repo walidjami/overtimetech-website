@@ -12,7 +12,7 @@ export const BRAND = {
   tagline: "You bring the tech, we bring the OverTime",
   url: "https://www.overtimetech.pro",
   email: "contact@overtimetech.pro",
-  logo: "https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png",
+  logo: "https://www.overtimetech.pro/hlogo.png",
 };
 
 export const COLORS = {
@@ -93,7 +93,7 @@ export function renderEmailShell({
           <!-- Header -->
           <tr>
             <td align="center" style="background-color:${COLORS.headerBg}; border:1px solid ${COLORS.border}; border-bottom:none; border-radius:16px 16px 0 0; padding:28px 32px 24px;">
-              <img src="${BRAND.logo}" alt="${escapeHtml(BRAND.name)}" height="30" style="display:block; height:30px; width:auto; border:0;" />
+              <img src="${BRAND.logo}" alt="${escapeHtml(BRAND.name)}" height="88" style="display:block; height:88px; width:auto; border:0;" />
             </td>
           </tr>
 

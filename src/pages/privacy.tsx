@@ -17,21 +17,15 @@ const PrivacyPage: React.FC = () => {
     <>
       <Head>
         <title>Privacy Policy — OverTime-Tech</title>
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/shuffle-for-bootstrap.png"
-        />
       </Head>
       <section className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950">
         <div className="container px-4 mx-auto">
           <nav className="flex justify-between items-center py-8">
             <Link href="/">
               <img
-                src="https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png"
+                src="/hlogo.svg"
                 alt="OverTime Tech"
-                className="h-8"
+                className="h-20"
               />
             </Link>
             <div className="lg:hidden">
@@ -306,9 +300,9 @@ const PrivacyPage: React.FC = () => {
           <div className="flex items-center mb-12">
             <Link href="/" className="mr-auto" onClick={() => setIsMenuOpen(false)}>
               <img
-                src="https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png"
+                src="/hlogo.svg"
                 alt="OverTime Tech"
-                className="h-8"
+                className="h-20"
               />
             </Link>
             <button onClick={() => setIsMenuOpen(false)}>
@@ -388,11 +382,11 @@ const PrivacyPage: React.FC = () => {
       <footer className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 border-t border-neutral-800 py-12">
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
+            <div className="mb-6 md:mb-0 text-center">
               <img
-                src="https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png"
+                src="/hlogo.svg"
                 alt="OverTime Tech"
-                className="h-8 mb-2"
+                className="h-20 mb-2"
               />
               <p className="text-neutral-400 text-sm">
                 Complete Tech Solutions

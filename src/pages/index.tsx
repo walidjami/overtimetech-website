@@ -18,12 +18,6 @@ const Index: React.FC = () => {
     <>
       <Head>
         <title>OverTime-Tech — Homepage</title>
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/shuffle-for-bootstrap.png"
-        />
       </Head>
       <IndexSectionCustomComponents1 />
       <IndexSectionCustomComponents2 />

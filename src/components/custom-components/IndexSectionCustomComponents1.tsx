@@ -10,9 +10,9 @@ const IndexSectionCustomComponents1: React.FC = () => {
         <nav className="flex justify-between items-center py-8">
           <Link href="/">
             <img
-              src="https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png"
+              src="/hlogo.svg"
               alt="OverTime Tech"
-              className="h-8"
+              className="h-20"
             />
           </Link>
           <div className="lg:hidden">
@@ -188,9 +188,9 @@ const IndexSectionCustomComponents1: React.FC = () => {
           <div className="flex items-center mb-12">
             <Link href="/" className="mr-auto">
               <img
-                src="https://static.shuffle.dev/uploads/files/1b/1b37e02bbb4082b8497a17db81592718b7cf54b1/logos/logo-78d34ac57821d853aaf47e300463f4f0.png"
+                src="/hlogo.svg"
                 alt="OverTime Tech"
-                className="h-8"
+                className="h-20"
               />
             </Link>
             <button onClick={() => setIsMenuOpen(false)}>
