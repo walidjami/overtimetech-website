@@ -8,13 +8,18 @@ const IndexSectionCustomComponents1: React.FC = () => {
     <section className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950">
       <div className="container px-4 mx-auto">
         <nav className="flex justify-between items-center py-8">
-          <Link href="/">
-            <img
-              src="/hlogo.svg"
-              alt="OverTime Tech"
-              className="h-20"
-            />
-          </Link>
+          <div className="flex flex-col items-center">
+            <Link href="/">
+              <img
+                src="/hlogo.svg"
+                alt="OverTime Tech"
+                className="h-20"
+              />
+            </Link>
+            <span className="text-neutral-400 text-sm mt-1">
+              Complete Tech Solutions
+            </span>
+          </div>
           <div className="lg:hidden">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -80,11 +85,6 @@ const IndexSectionCustomComponents1: React.FC = () => {
         </nav>
         <div className="flex flex-wrap items-center -mx-4 mt-8 lg:mt-12 pb-20">
           <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-            <div className="mb-6">
-              <span className="text-sm text-neutral-400 font-medium">
-                Complete Tech Solutions
-              </span>
-            </div>
             <h1 className="max-w-2xl mb-6 text-4xl md:text-5xl lg:text-6xl font-medium leading-none text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
               You bring the tech, we bring the OverTime
             </h1>

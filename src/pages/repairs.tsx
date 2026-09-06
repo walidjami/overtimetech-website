@@ -21,13 +21,18 @@ const RepairsPage: React.FC = () => {
       <section className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950">
         <div className="container px-4 mx-auto">
           <nav className="flex justify-between items-center py-8">
-            <Link href="/">
-              <img
-                src="/hlogo.svg"
-                alt="OverTime Tech"
-                className="h-20"
-              />
-            </Link>
+            <div className="flex flex-col items-center">
+              <Link href="/">
+                <img
+                  src="/hlogo.svg"
+                  alt="OverTime Tech"
+                  className="h-20"
+                />
+              </Link>
+              <span className="text-neutral-400 text-sm mt-1">
+                Complete Tech Solutions
+              </span>
+            </div>
             <div className="lg:hidden">
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)} 
