@@ -10,9 +10,10 @@
 export const BRAND = {
   name: "OverTime Tech",
   tagline: "You bring the tech, we bring the OverTime",
-  url: "https://www.overtimetech.pro",
+  // Note: the www. subdomain has no matching TLS cert — use the bare domain.
+  url: "https://overtimetech.pro",
   email: "contact@overtimetech.pro",
-  logo: "https://www.overtimetech.pro/hlogo.png",
+  logo: "https://overtimetech.pro/hlogo.png",
 };
 
 export const COLORS = {
@@ -93,7 +94,7 @@ export function renderEmailShell({
           <!-- Header -->
           <tr>
             <td align="center" style="background-color:${COLORS.headerBg}; border:1px solid ${COLORS.border}; border-bottom:none; border-radius:16px 16px 0 0; padding:28px 32px 24px;">
-              <img src="${BRAND.logo}" alt="${escapeHtml(BRAND.name)}" height="88" style="display:block; height:88px; width:auto; border:0;" />
+              <img src="${BRAND.logo}" alt="${escapeHtml(BRAND.name)}" width="252" height="88" style="height:88px; width:252px; max-width:100%; border:0; color:${COLORS.text}; font-family:${FONT_HEADING}; font-size:22px; font-weight:600; line-height:88px;" />
             </td>
           </tr>
 
