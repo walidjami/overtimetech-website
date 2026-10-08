@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const AboutPage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [photoFailed, setPhotoFailed] = useState(false);
 
   useEffect(() => {
     // Load custom component scripts after React components are mounted
@@ -16,7 +17,11 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>About — OverTime-Tech</title>
+        <title>About OverTime Tech | Computer Repair, Custom PCs & Technology Services</title>
+        <meta
+          name="description"
+          content="Learn about OverTime Tech and the engineering experience behind our computer repair, custom PC, software development, and website services in Northern Virginia."
+        />
       </Head>
       <section className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950">
         <div className="container px-4 mx-auto">
@@ -95,160 +100,186 @@ const AboutPage: React.FC = () => {
 
       <section className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 py-20">
         <div className="container px-4 mx-auto">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
+            {/* Hero */}
             <div className="text-center mb-16">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg
-                  className="w-10 h-10 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <h1 className="text-5xl leading-tight font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 font-heading mb-6">
+              <p className="text-sm font-semibold tracking-widest uppercase text-blue-400 mb-4">
                 About OverTime Tech
+              </p>
+              <h1 className="text-5xl leading-tight font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 font-heading mb-6">
+                Built by an engineer. Driven by problem-solving.
               </h1>
               <p className="max-w-2xl mx-auto text-lg leading-relaxed text-neutral-300">
-                Founded by a passionate computer engineer with a deep love for technology and problem-solving
+                OverTime Tech is a locally owned technology business serving Northern Virginia and the
+                greater DMV area. We combine professional software engineering experience with hands-on
+                technology expertise to provide practical, dependable solutions for individuals and businesses.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6">
-                  My Background
-                </h2>
-                <div className="space-y-6">
-                  <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.482 0z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-medium text-white">Education</h3>
-                        <p className="text-neutral-400">Bachelor's Degree in Computer Engineering</p>
-                      </div>
+            {/* Founder */}
+            <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
+                <div className="md:col-span-2 flex justify-center">
+                  {photoFailed ? (
+                    <div className="w-64 h-80 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center shadow-[0_0_40px_rgba(99,102,241,0.35)]">
+                      <span className="text-7xl font-medium text-white">W</span>
                     </div>
-                    <p className="text-neutral-300">
-                      George Mason University Alumnus with a Bachelor's degree in Computer Engineering, 
-                      where I developed a strong foundation in both hardware and software systems, 
-                      digital design, and embedded systems programming
-                    </p>
-                  </div>
-
-                  <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-medium text-white">Professional Experience</h3>
-                        <p className="text-neutral-400">Software Engineer</p>
-                      </div>
-                    </div>
-                    <p className="text-neutral-300">
-                      As a professional software engineer, I've worked on diverse projects ranging from 
-                      web applications and mobile apps to embedded systems and automation tools. 
-                      My experience spans multiple programming languages and frameworks, always 
-                      focusing on clean, efficient, and maintainable code
-                    </p>
-                  </div>
+                  ) : (
+                    <img
+                      src="/walid.jpg"
+                      alt="Walid, founder of OverTime Tech"
+                      width={400}
+                      height={500}
+                      onError={() => setPhotoFailed(true)}
+                      className="w-64 md:w-full max-w-xs aspect-[4/5] object-cover rounded-xl shadow-[0_0_40px_rgba(99,102,241,0.35)]"
+                    />
+                  )}
                 </div>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6">
-                  My Passion
-                </h2>
-                <div className="space-y-6">
-                  <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
-                    <h3 className="text-xl font-medium text-white mb-4">Tinkering & Problem Solving</h3>
-                    <p className="text-neutral-300 mb-4">
-                      I've always been fascinated by how things work. From taking apart electronics 
-                      as a kid to building custom computers and troubleshooting complex software issues, 
-                      I love the challenge of understanding and fixing problems.
+                <div className="md:col-span-3">
+                  <p className="text-sm font-semibold tracking-widest uppercase text-blue-400 mb-2">
+                    Meet the person behind OverTime Tech
+                  </p>
+                  <h2 className="text-3xl font-medium text-white mb-4">Hi, I'm Walid.</h2>
+                  <div className="space-y-4 text-neutral-300">
+                    <p>I'm the engineer behind OverTime Tech.</p>
+                    <p>
+                      I've always enjoyed figuring out how technology works—and especially figuring out why it
+                      doesn't. That curiosity started with taking things apart and experimenting with electronics
+                      and computers, and eventually became a career in software engineering.
                     </p>
-                    <ul className="text-sm text-neutral-400 space-y-2">
-                      <li className="flex items-center">
-                        <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Hardware diagnostics and repair
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Custom PC builds and optimization
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Software development and debugging
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
-                    <h3 className="text-xl font-medium text-white mb-4">All Things Tech</h3>
-                    <p className="text-neutral-300">
-                      Technology is more than just my career—it's my passion. I stay up-to-date 
-                      with the latest developments in hardware, software, and emerging technologies. 
-                      Whether it's exploring new programming languages, experimenting with IoT devices, 
-                      or building automation systems, I'm always learning and growing
+                    <p>
+                      I started OverTime Tech to bring that same problem-solving mindset to my local community.
+                      Instead of dealing with a large chain or a faceless support department, customers can work
+                      directly with the person responsible for solving their problem.
                     </p>
                   </div>
+                  <p className="mt-6 text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                    Local business. Personal service. Professional expertise.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-8 mb-16">
+            {/* Experience */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6 text-center">
+                The Experience Behind OverTime Tech
+              </h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.482 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-medium text-white">Education</h3>
+                      <p className="text-neutral-400">Bachelor's Degree in Computer Engineering</p>
+                    </div>
+                  </div>
+                  <p className="text-neutral-300 mb-4">
+                    A George Mason University graduate with a Bachelor's degree in Computer Engineering and a
+                    foundation spanning computer hardware, software systems, digital design, and embedded systems.
+                  </p>
+                  <p className="text-sm text-neutral-500">
+                    Hardware · Software · Digital Systems · Embedded Systems
+                  </p>
+                </div>
+
+                <div className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-medium text-white">Professional Experience</h3>
+                      <p className="text-neutral-400">Software Engineering</p>
+                    </div>
+                  </div>
+                  <p className="text-neutral-300 mb-4">
+                    My professional experience as a software engineer has involved building and maintaining
+                    software across web applications, mobile applications, embedded systems, and automation.
+                  </p>
+                  <p className="text-neutral-300">
+                    That experience provides a broader perspective when troubleshooting technology—from the
+                    hardware a system runs on to the software that makes it work.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Why OverTime Tech */}
+            <div className="mb-16">
               <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6 text-center">
                 Why OverTime Tech?
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {[
+                  {
+                    icon: "🛠️",
+                    title: "Engineering Experience",
+                    text: "Formal engineering education, professional software development experience, and hands-on hardware knowledge come together to solve problems from multiple angles.",
+                  },
+                  {
+                    icon: "🤝",
+                    title: "Straightforward Service",
+                    text: "No unnecessary jargon or upselling. I'll explain the problem, walk you through your options, and recommend the solution that makes the most sense.",
+                  },
+                  {
+                    icon: "📍",
+                    title: "Local & Personal",
+                    text: "As a small local business, I care about the people I serve. You get direct communication, personal attention, and someone who stands behind the work.",
+                  },
+                ].map((c) => (
+                  <div key={c.title} className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl text-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4 text-xl">
+                      {c.icon}
+                    </div>
+                    <h3 className="text-xl font-medium text-white mb-2">{c.title}</h3>
+                    <p className="text-neutral-300 text-sm">{c.text}</p>
                   </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Technical Expertise</h3>
-                  <p className="text-neutral-300">Combining formal education and professional expertise with hands-on experience to deliver professional solutions</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Personal Touch</h3>
-                  <p className="text-neutral-300">Every project is approached with genuine care and attention to detail, treating your tech like my own</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Continuous Learning</h3>
-                  <p className="text-neutral-300">Always staying current with technology trends to provide the best solutions for your needs</p>
-                </div>
+                ))}
               </div>
             </div>
 
-            <div className="text-center">
+            {/* How I work */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 mb-6 text-center">
+                A Simple Approach to Technology
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { n: "01", title: "Understand", text: "I start by understanding what you actually need—not what you should buy." },
+                  { n: "02", title: "Diagnose", text: "I take the time to identify the underlying problem rather than simply treating the symptoms." },
+                  { n: "03", title: "Recommend", text: "I'll explain your options and recommend the solution that makes the most sense for your situation and budget." },
+                  { n: "04", title: "Solve", text: "Once you've chosen the right approach, I'll take care of the technical work and make sure everything is working properly." },
+                ].map((step) => (
+                  <div key={step.n} className="p-6 bg-neutral-800 border border-neutral-700 rounded-xl">
+                    <div className="text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-2">
+                      {step.n}
+                    </div>
+                    <h3 className="text-xl font-medium text-white mb-2">{step.title}</h3>
+                    <p className="text-neutral-300 text-sm">{step.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="bg-neutral-800 border border-neutral-700 rounded-xl p-10 text-center">
+              <h2 className="text-3xl font-medium text-white mb-4">Need Technology Help in Northern Virginia?</h2>
+              <p className="max-w-2xl mx-auto text-neutral-300 mb-8">
+                Whether you need a computer repaired, a custom PC built, software developed, or a website created,
+                tell me what you're working with and we'll figure out the right solution.
+              </p>
               <Link
                 className="inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg"
                 href="/#ready-to-get-started"
               >
-                Let's Work Together
+                Get Started →
               </Link>
             </div>
           </div>
