@@ -69,6 +69,14 @@ const IndexSectionCustomComponents1: React.FC = () => {
                 Websites
               </Link>
             </li>
+            <li className="border-l border-neutral-700 pl-8">
+              <Link
+                className="text-sm hover:text-white font-medium text-neutral-300 transition-colors duration-200"
+                href="/about"
+              >
+                About
+              </Link>
+            </li>
           </ul>
           <Link
             className="hidden lg:block px-4 py-2 text-sm font-semibold text-neutral-950 bg-white hover:bg-neutral-100 rounded-full transition-all duration-200 hover:shadow-lg"
@@ -246,6 +254,15 @@ const IndexSectionCustomComponents1: React.FC = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Websites
+                </Link>
+              </li>
+              <li className="mb-1">
+                <Link
+                  className="block p-4 text-sm font-semibold hover:bg-neutral-800 hover:text-white rounded-lg text-neutral-300 transition-all duration-200"
+                  href="/about"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  About
                 </Link>
               </li>
             </ul>
